@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Montserra';
+   src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --color1 : rgb(252, 248, 248);
+    --color2 : rgb(5, 5, 5) 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserra, sans-serif ;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: 1px solid var(--color1);
+    outline: none;
+    color: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.4s ease;
+    cursor: pointer;
+    color: var(--color1);
+}
+ button:hover {
+    color: var(--color2);
+    background: var(--color1);
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+nav li {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+nav li:hover{
+    color: rgb(95, 4, 170) ;
+    border-top: rgb(95, 4, 170) solid;
+    border-width: 5px;
+}
+nav li:last-child {
+    border-top: none;
+}
+
+#language {
+    background: rgba(128, 128, 128, 0.25);
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.main-header {
+    background: url(./assets/img/bg.jpg) center/cover fixed;
+    color: var(--color1);
+    padding: 60px;
+    /* height: 600px; */
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-size: 700;
+    margin: 50px 0 50px;
+}
+
+.main-header button {
+    padding: 15px 20px;
+    letter-spacing: 2px;
+}
+
+.main-header i {
+    transform: translateX(5px);
+}
+
+.header-text {
+    padding: 45px ;
+    max-width: 1100px;
+    line-height: 34px;
+    font-size: 1.2rem;
+
+    margin: 0 auto;
+    /* La propriété "margin: 0 auto" va permettre de centrer les éléments */
+}
+
+.icon-part {
+    background: var(--color2);
+    color: var(--color1);
+    padding: 65px 0;
+}
+
+.icon-part-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto ;
+}
+
+.lip-logo {
+    margin-bottom: 30px;
+}
+
+.icon-part h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.icon-part p {
+    width: 80%;
+    margin: 10px auto 20px;
+}
+
+.icon-part button {
+    padding: 9px 32px;
+}
+
+.news-part {
+    background: rgba(245, 245, 245, 0.8);
+    padding: 80px 0 45px;
+}
+
+.header-news {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left-part {
+    line-height: 30px;
+}
+
+.left-part h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.left-part p {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.right-part button {
+    color: var(--color2);
+    border-color: var(--color2);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+.right-part button:hover {
+    color: var(--color1);
+    background: var(--color2);
+}
+
+.main-news-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+
+}
+
+.main-news-container > div {
+    position: relative;
+    max-width: 23%;
+
+}
+
+.mn-pic img {
+    object-fit: cover;
+    /* il est important de mettre les image en provenance du html en "object-fit: cover;" */
+
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 8px 4px 10px #888
+}
+
+.main-news-container h4 {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.main-news-container p {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.link {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+}
+
+.main-news a {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: rgb(95, 4, 170);
+    letter-spacing: 1px;
+}
+
+.main-news a:hover {
+    color: rgb(180, 180,1);
+}
+
+.main-news i {
+    transform: translateX(7px);
+}
+
+.contact {
+    padding: 65px 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    position: relative;
+}
+
+.contact-list::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: rgb(195, 195, 195);
+    bottom: -30px;
+}
+
+.contact-list .list {
+    text-align: left;
+    width: 24%;
+}
+
+#contact-img img {
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-list h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.infos-p li {
+    margin: 15px 0; 
+}
+
+.list p {
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.list h6 {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.list .network {
+    margin: 20px 0 8px;
+}
+
+.footer-logos i {
+    font-size:0.8rem;
+    margin: 0 12px 30px 0;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.contact-medias {
+    padding: 60px 0 15px;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.medias-text {
+    text-align: left;
+    width: 30%;
+}
+.medias-text h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+.medias-text p {
+    font-size: 0.8rem;
+}
+
+.medias-logos {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.medias-logos img {
+    width: 60px;
+}
+
+footer {
+    background: var(--color2);
+    color: var(--color1);
+    padding: 25px;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto ;
+}
+
+
+/* ************ Media Queries (Responsive)************ */
+
+@media screen and (max-width: 885px) {
+    nav li  {
+    font-size: 0.7rem;
+    }
+    .main-header img {
+        width: 60%;
+    }
+    .contact-list .list {
+        padding-left: 15px;
+    }
+    .medias-logos img {
+        width: 40px;
+    }
+    footer ul {
+        flex-wrap: wrap;
+    }
+    footer li {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav li {
+        display: none;
+    }
+
+    .icon-part-container {
+        display: block;
+    }
+    .icon-part {
+        padding: 0 0 30px;
+    }
+
+    .list-icon-part {
+        margin-top: 30px;
+    }
+
+    
+    .header-news {
+        display: block;
+    }
+    
+    .left-part {
+        width: 100%;
+    }
+    
+    .left-part h2 {
+        text-align: center;
+    }
+    
+    .main-news-container {
+        display: block;
+    }
+    
+    .left-part p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .main-news-container div {
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        margin-top: 58px;
+    }
+    
+    .main-news img {
+        width: 70%;
+    }
+}
+
+.contact {
+    display: none;
+}
